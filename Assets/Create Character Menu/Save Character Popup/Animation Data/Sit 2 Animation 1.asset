@@ -15,3 +15,7 @@ MonoBehaviour:
   AnimationName: Sit 2 Animation
   AnimationStartPosition: {x: 0, y: 160}
   AnimationPositionOffset: {x: 192, y: 32}
+  AnimationStartPosition32x32: {x: 0, y: 320}
+  AnimationPositionOffset32x32: {x: 384, y: 64}
+  AnimationStartPosition48x48: {x: 0, y: 480}
+  AnimationPositionOffset48x48: {x: 576, y: 96}

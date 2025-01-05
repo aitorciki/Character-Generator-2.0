@@ -10,8 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bde4a2e3f08ed974baaf49a441af3107, type: 3}
-  m_Name: Grab Gun Animation
+  m_Name: Read Animation
   m_EditorClassIdentifier: 
-  AnimationName: Grab Gun Animation
-  AnimationStartPosition: {x: 0, y: 512}
-  AnimationPositionOffset: {x: 256, y: 32}
+  AnimationName: Read Animation
+  AnimationStartPosition: {x: 0, y: 224}
+  AnimationPositionOffset: {x: 192, y: 32}
+  AnimationStartPosition32x32: {x: 0, y: 448}
+  AnimationPositionOffset32x32: {x: 384, y: 64}
+  AnimationStartPosition48x48: {x: 0, y: 672}
+  AnimationPositionOffset48x48: {x: 576, y: 96}

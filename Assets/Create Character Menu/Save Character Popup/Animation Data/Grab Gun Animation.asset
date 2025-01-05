@@ -10,8 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bde4a2e3f08ed974baaf49a441af3107, type: 3}
-  m_Name: Pickup Animation
+  m_Name: Grab Gun Animation
   m_EditorClassIdentifier: 
-  AnimationName: Pickup Animation
-  AnimationStartPosition: {x: 0, y: 288}
-  AnimationPositionOffset: {x: 768, y: 32}
+  AnimationName: Grab Gun Animation
+  AnimationStartPosition: {x: 0, y: 512}
+  AnimationPositionOffset: {x: 256, y: 32}
+  AnimationStartPosition32x32: {x: 0, y: 1024}
+  AnimationPositionOffset32x32: {x: 512, y: 64}
+  AnimationStartPosition48x48: {x: 0, y: 1536}
+  AnimationPositionOffset48x48: {x: 768, y: 96}

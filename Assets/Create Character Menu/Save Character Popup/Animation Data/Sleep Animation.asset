@@ -10,8 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bde4a2e3f08ed974baaf49a441af3107, type: 3}
-  m_Name: Read Animation
+  m_Name: Sleep Animation
   m_EditorClassIdentifier: 
-  AnimationName: Read Animation
-  AnimationStartPosition: {x: 0, y: 224}
-  AnimationPositionOffset: {x: 192, y: 32}
+  AnimationName: Sleep Animation
+  AnimationStartPosition: {x: 0, y: 96}
+  AnimationPositionOffset: {x: 208, y: 32}
+  AnimationStartPosition32x32: {x: 0, y: 192}
+  AnimationPositionOffset32x32: {x: 416, y: 64}
+  AnimationStartPosition48x48: {x: 0, y: 288}
+  AnimationPositionOffset48x48: {x: 624, y: 96}

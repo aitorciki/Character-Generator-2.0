@@ -142,9 +142,24 @@ public class SaveCharacterManager : MonoBehaviour
         }
 
         AnimationSO animationData = animationDataDropdown.RefreshSelectedAnimation();
-        Debug.Log(animationData);
         if (animationData != null)
-            finalTexture = SpriteManager.ExtractTextureRegion(finalTexture, animationData.AnimationStartPosition.x, animationData.AnimationStartPosition.y, animationData.AnimationPositionOffset.x, animationData.AnimationPositionOffset.y);
+        {
+            switch (sizeDropdown.value)
+            {
+                case 0:
+                    // 16x16
+                    finalTexture = SpriteManager.ExtractTextureRegion(finalTexture, animationData.AnimationStartPosition.x, animationData.AnimationStartPosition.y, animationData.AnimationPositionOffset.x, animationData.AnimationPositionOffset.y);
+                    break;
+                case 1:
+                    // 32x32
+                    finalTexture = SpriteManager.ExtractTextureRegion(finalTexture, animationData.AnimationStartPosition32x32.x, animationData.AnimationStartPosition32x32.y, animationData.AnimationPositionOffset32x32.x, animationData.AnimationPositionOffset32x32.y);
+                    break;
+                case 2:
+                    // 48x48
+                    finalTexture = SpriteManager.ExtractTextureRegion(finalTexture, animationData.AnimationStartPosition48x48.x, animationData.AnimationStartPosition48x48.y, animationData.AnimationPositionOffset48x48.x, animationData.AnimationPositionOffset48x48.y);
+                    break;
+            }
+        }
 
         //finalTexture = SpriteManager.ExtractTextureRegion(finalTexture, 0, 32, 383, 32);
 

@@ -10,8 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bde4a2e3f08ed974baaf49a441af3107, type: 3}
-  m_Name: Shoot Animation
+  m_Name: Gift Animation
   m_EditorClassIdentifier: 
-  AnimationName: Shoot Animation
-  AnimationStartPosition: {x: 0, y: 576}
-  AnimationPositionOffset: {x: 192, y: 32}
+  AnimationName: Gift Animation
+  AnimationStartPosition: {x: 0, y: 320}
+  AnimationPositionOffset: {x: 640, y: 32}
+  AnimationStartPosition32x32: {x: 0, y: 640}
+  AnimationPositionOffset32x32: {x: 1280, y: 64}
+  AnimationStartPosition48x48: {x: 0, y: 960}
+  AnimationPositionOffset48x48: {x: 1920, y: 96}
