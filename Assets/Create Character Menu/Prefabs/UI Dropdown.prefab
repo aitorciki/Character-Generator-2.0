@@ -1226,4 +1226,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropdownManager: {fileID: 0}
-  dropdownIndex: 0
+  <CharacterPiece>k__BackingField:
+    rid: -2
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }

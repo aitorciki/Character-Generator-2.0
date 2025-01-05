@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Outline without sampling
+  m_Name: Outline Without Sampling
   m_Shader: {fileID: -6465566751694194690, guid: 2cd5d15b925ad9744bc54170c183464e, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0

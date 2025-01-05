@@ -30,6 +30,8 @@ public class SaveCharacterManager : MonoBehaviour
 
     [SerializeField] TMP_InputField fileNameInputField;
     [SerializeField] TMP_Dropdown sizeDropdown;
+    [SerializeField] TMP_Dropdown animationDropdown;
+    [SerializeField] AnimationDataDropdown animationDataDropdown;
     [SerializeField] Button saveCharacterButton;
 
     [Space]
@@ -74,6 +76,7 @@ public class SaveCharacterManager : MonoBehaviour
 
         fileNameInputField.interactable = true;
         sizeDropdown.interactable = true;
+        animationDropdown.interactable = true;
         saveCharacterButton.interactable = true;
 
         foreach (TMP_Text text in contentTexts)
@@ -109,6 +112,7 @@ public class SaveCharacterManager : MonoBehaviour
 
         fileNameInputField.interactable = false;
         sizeDropdown.interactable = false;
+        animationDropdown.interactable = false;
         saveCharacterButton.interactable = false;
 
         foreach (TMP_Text text in contentTexts)
@@ -136,6 +140,13 @@ public class SaveCharacterManager : MonoBehaviour
         {
             finalTexture = SpriteManager.CombineTwoTextures(finalTexture, characterPiecesToBeCombined[i]);
         }
+
+        AnimationSO animationData = animationDataDropdown.RefreshSelectedAnimation();
+        Debug.Log(animationData);
+        if (animationData != null)
+            finalTexture = SpriteManager.ExtractTextureRegion(finalTexture, animationData.AnimationStartPosition.x, animationData.AnimationStartPosition.y, animationData.AnimationPositionOffset.x, animationData.AnimationPositionOffset.y);
+
+        //finalTexture = SpriteManager.ExtractTextureRegion(finalTexture, 0, 32, 383, 32);
 
         SaveCharacterToFile(finalTexture);
         UpdateScores();
