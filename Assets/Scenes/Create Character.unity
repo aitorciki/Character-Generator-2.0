@@ -23987,7 +23987,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 63.1
+  m_fontSize: 70.2
   m_fontSizeBase: 67.54
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -24350,7 +24350,7 @@ MonoBehaviour:
     - The folder was renamed
 
     - this project
-    was downloaded from the github repo which doesn''t include the portrait pieces
+    was downloaded from the github repo which doesn''t include the character pieces
     folder'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e8c9e41e987e8a849ac0e28a5dd4b55c, type: 2}
