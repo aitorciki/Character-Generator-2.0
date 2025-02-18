@@ -30,7 +30,7 @@
 #### To the right of the tab is the "Try Character" button. Clicking this button will transport you to a simulated world where you can test out how your character looks and feels.
 
 ### -Save Character-
-#### To the right of the tabs is a button labeled "Save". Clicking this button opens a popup allowing you to save your character as a png file on your computer. Simply input the name you want for your character and it's size, then click save.
+#### To the right of the tabs is a button labeled "Save". Clicking this button opens a popup allowing you to save your character as a png file on your computer. Simply input the name you want for your character, it's size and optionally select which part of the spritesheet to save. You can save the entire spritesheet or only a particular animation, then click save.
 
 #### Once saved, you'll be shown statistics about how many characters have been created and a button will be shown which when clicked will show where your character was saved.
 
