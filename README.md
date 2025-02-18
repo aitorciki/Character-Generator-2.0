@@ -42,7 +42,7 @@
 #### - Randomize Character: 'R'
 #### - Transfer to Try Character Scene: 'C'
 
-### -Adding Character Pieces
+### -Adding Character Pieces-
 #### More character pieces are included in Modern Exteriors, to add them to the Character Generator first locate the installation directy of the Character Generator
 #### (Defaults to Program Files (x86)).
 
