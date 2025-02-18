@@ -30,7 +30,7 @@
 #### To the right of the tab is the "Try Character" button. Clicking this button will transport you to a simulated world where you can test out how your character looks and feels.
 
 ### -Save Character-
-#### To the right of the tabs is a button labeled "Save". Clicking this button opens a popup allowing you to save your character as a png file on your computer. Simply input the name you want for your character and it's size, then click save.
+#### To the right of the tabs is a button labeled "Save". Clicking this button opens a popup allowing you to save your character as a png file on your computer. Simply input the name you want for your character, it's size and optionally select which part of the spritesheet to save. You can save the entire spritesheet or only a particular animation, then click save.
 
 #### Once saved, you'll be shown statistics about how many characters have been created and a button will be shown which when clicked will show where your character was saved.
 
@@ -41,6 +41,12 @@
 #### - Open Info Popup: 'I'
 #### - Randomize Character: 'R'
 #### - Transfer to Try Character Scene: 'C'
+
+### -Adding Character Pieces-
+#### More character pieces are included in Modern Exteriors, to add them to the Character Generator first locate the installation directy of the Character Generator
+#### (Defaults to Program Files (x86)).
+
+#### From within that folder locate the "Character Pieces" folder which contains every character piece split into it's own folder. Simply go to the folder with the same type piece you want to add and drag and drop your new character piece into that folder. Note a 16x16 #### version is neccesary for it to be loaded when the tool is launched. Additional character pieces must be the same size as every other file in the same folder otherwise the file won't be loaded.
 
 ### –Need More Help?--
 #### If you’re still confused about something or need clarification feel free to join the official LimeZu Community Server and ask me (@LegendarySwordsman2) any questions you may have. https://discord.com/invite/2wB3RuAESb
