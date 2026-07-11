@@ -73,3 +73,11 @@ crashlytics-build.properties
 
 Character Pieces/
 Saved Characters/
+
+# macOS
+.DS_Store
+
+# Python (нормализация ассетов — tools/normalize_character_pieces.py)
+tools/__pycache__/
+tools/venv/
+*.pyc
