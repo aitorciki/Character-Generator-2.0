@@ -37,11 +37,12 @@ public class CharacterPieceDatabase : MonoBehaviour
         Instance = this;
     }
 
-    // Ищет папку "Character Pieces" в нескольких местах, чтобы работало и в редакторе,
-    // и в собранном билде (особенно macOS .app, где Data лежит внутри bundle).
-    // Порядок кандидатов: cwd → Assets → Assets/Create Character Menu → StreamingAssets →
-    // persistentDataPath → и вверх от dataPath (Resources, Contents, сам .app, папка рядом с .app).
-    // Основано на PR #3 (JohanJimenex), расширено кандидатом "рядом с .app" для двойного клика.
+    // Looks for the "Character Pieces" folder in several locations, so it works both in the
+    // editor and in a built player (especially the macOS .app, where Data lives inside the bundle).
+    // Candidate order: cwd -> Assets -> Assets/Create Character Menu -> StreamingAssets ->
+    // persistentDataPath -> and walking up from dataPath (Resources, Contents, the .app itself,
+    // and the folder next to the .app).
+    // Based on PR #3 (JohanJimenex), extended with the "next to the .app" candidate for double-click launch.
     public static bool TryResolveCharacterPiecesDirectory(out string resolvedPath)
     {
         if (!string.IsNullOrWhiteSpace(CharacterPiecesDirectory) && Directory.Exists(CharacterPiecesDirectory))
@@ -59,8 +60,8 @@ public class CharacterPieceDatabase : MonoBehaviour
             Path.Combine(Application.persistentDataPath, CharacterPiecesFolderName),
         };
 
-        // В player-билдах dataPath спрятан глубоко в bundle. Поднимаемся вверх,
-        // чтобы найти "Character Pieces" в Resources, Contents, самом .app или рядом с ним.
+        // In player builds dataPath is buried deep inside the bundle. Walk upwards to
+        // find "Character Pieces" in Resources, Contents, the .app itself, or next to it.
         string current = Application.dataPath;
         for (int i = 0; i < 4 && !string.IsNullOrWhiteSpace(current); i++)
         {

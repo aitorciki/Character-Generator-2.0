@@ -4,9 +4,9 @@ using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
 using UnityEngine;
 
-// После сборки копирует папку "Character Pieces" рядом с бинарем и (для macOS .app)
-// в StreamingAssets внутри bundle. Взято из PR #3 (JohanJimenex) без изменений.
-// Источник: корень проекта (cwd) — там должен лежать "Character Pieces" (или symlink на него).
+// After the build, copies the "Character Pieces" folder next to the built player and (for the
+// macOS .app) into StreamingAssets inside the bundle. Taken from PR #3 (JohanJimenex) unchanged.
+// Source: the project root (cwd) — "Character Pieces" (or a symlink to it) must live there.
 public sealed class CharacterPiecesPostBuild : IPostprocessBuildWithReport
 {
     public int callbackOrder => 0;
