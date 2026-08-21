@@ -74,7 +74,9 @@ My Folder/
 
 Now **double-click the `.app`**. It will find `Character Pieces` next to itself and load. Done.
 
-> Where are saved characters stored? In `~/Library/Application Support/Gray Matter Studios/Character Generator 2_0/` (standard macOS app data location — survives app reinstall, not transferred to another Mac automatically).
+> Where are saved characters stored? In `~/Library/Application Support/com.Gray-Matter-Studios.Character-Generator-2.0/Saved Characters/` (Unity derives this path from the app's bundle id; standard macOS app data location — survives app reinstall, not transferred to another Mac automatically). In Finder: **Go → Go to Folder (⇧⌘G)**, paste the path.
+>
+> After saving you may see **"(Offline) Can't load personal/global stats"** — this is expected and harmless: online leaderboards are disabled in this fork, and the character PNG is already written to the folder above.
 
 ---
 
@@ -144,7 +146,7 @@ This fork is upstream `Main` plus:
 
 - Two architecture-specific builds (Apple Silicon + Intel). No single Universal binary — see *Quick start* for which to download. Build Universal yourself if you want one fat `.app`.
 - **Unsigned** app — Gatekeeper warning on first launch (see Quick start).
-- **LootLocker disabled** — leaderboards/cloud saves off unless you set your own key.
+- **LootLocker disabled** — leaderboards/cloud saves off unless you set your own key. The "(Offline) can't load stats" note after saving is expected; local saving is unaffected.
 - Normalization is tuned to the asset-pack dimensions described above; if a future LimeZu update changes dimensions again, re-run the script (rules are in `TARGETS` inside it).
 
 ---
